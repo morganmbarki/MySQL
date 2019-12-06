@@ -63,3 +63,8 @@ CHANGE languages version VARCHAR(255);
 USE `webDevelopment`;
 ALTER TABLE `languages`
 MODIFY version VARCHAR(10);
+--...........................................................Partie3 Exercice5
+USE `webDevelopment`;
+ALTER TABLE `clients`
+CHANGE phone phoneNumber VARCHAR(10);
+MODIFY phoneNumber VARCHAR(10);
