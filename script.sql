@@ -32,3 +32,6 @@ CREATE TABLE IF NOT EXISTS `frameworks`
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100)
 );
+--...........................................................Partie2 Exercice4
+USE `webDevelopment`;
+DROP TABLE IF EXISTS `tools`;
