@@ -9,3 +9,5 @@ CREATE DATABASE `webDevelopment` CHARACTER SET 'utf8';
 CREATE DATABASE IF NOT EXISTS `frameworks` CHARACTER SET 'utf8';
 --...........................................................Partie1 Exercice4
 DROP DATABASE `languages`;
+--...........................................................Partie1 Exercice5
+DROP DATABASE IF EXISTS `frameworks`;
