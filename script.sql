@@ -11,3 +11,10 @@ CREATE DATABASE IF NOT EXISTS `frameworks` CHARACTER SET 'utf8';
 DROP DATABASE `languages`;
 --...........................................................Partie1 Exercice5
 DROP DATABASE IF EXISTS `frameworks`;
+--...........................................................Partie2 Exercice1
+USE `webDevelopment`;
+CREATE TABLE `languages`
+(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  languages VARCHAR (255)
+);
