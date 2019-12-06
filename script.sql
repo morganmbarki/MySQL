@@ -57,5 +57,9 @@ ALTER TABLE `frameworks`
 ADD version INT;
 --...........................................................Partie3 Exercice3
 USE `webDevelopment`;
-ALTER TABLE `frameworks`
+ALTER TABLE `languages`
 CHANGE languages version VARCHAR(255);
+--...........................................................Partie3 Exercice4
+USE `webDevelopment`;
+ALTER TABLE `languages`
+MODIFY version VARCHAR(10);
