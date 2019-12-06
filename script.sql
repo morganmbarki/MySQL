@@ -51,3 +51,11 @@ CREATE TABLE `clients`
 USE `webDevelopment`;
 ALTER TABLE `clients`
 ADD versions VARCHAR(15);
+--...........................................................Partie3 Exercice2
+USE `webDevelopment`;
+ALTER TABLE `frameworks`
+ADD version INT;
+--...........................................................Partie3 Exercice3
+USE `webDevelopment`;
+ALTER TABLE `frameworks`
+CHANGE languages version VARCHAR(255);
