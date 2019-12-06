@@ -66,7 +66,7 @@ MODIFY version VARCHAR(10);
 --...........................................................Partie3 Exercice5
 USE `webDevelopment`;
 ALTER TABLE `clients`
-CHANGE phone phoneNumber INT;
+CHANGE phone phoneNumber INT,
 MODIFY phoneNumber VARCHAR(10);
 --...........................................................Partie4 Exercice1
 USE `webDevelopment`;
