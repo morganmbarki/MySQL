@@ -35,3 +35,15 @@ CREATE TABLE IF NOT EXISTS `frameworks`
 --...........................................................Partie2 Exercice4
 USE `webDevelopment`;
 DROP TABLE IF EXISTS `tools`;
+--...........................................................Partie2 Exercice5
+USE `webDevelopment`;
+CREATE TABLE `clients`
+(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  lastname VARCHAR(50),
+  firstname VARCHAR(50),
+  birthdate DATE,
+  address VARCHAR(100),
+  phone INT,
+  mail VARCHAR(150)
+);
