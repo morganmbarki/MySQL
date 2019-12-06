@@ -47,3 +47,7 @@ CREATE TABLE `clients`
   phone INT,
   mail VARCHAR(150)
 );
+--...........................................................Partie3 Exercice1
+USE `webDevelopment`;
+ALTER TABLE `clients`
+ADD versions VARCHAR(15);
