@@ -18,3 +18,10 @@ CREATE TABLE `languages`
   id INT AUTO_INCREMENT PRIMARY KEY,
   languages VARCHAR (255)
 );
+--...........................................................Partie2 Exercice2
+USE `webDevelopment`;
+CREATE TABLE `tools`
+(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  tool VARCHAR (255)
+);
