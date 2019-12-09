@@ -86,3 +86,7 @@ VALUES ('Symfony', 'version 2.8'),
 ('Symfony', 'version 3'),
 ('Jquery', 'version 1.6'),
 ('Jquery', 'version 2.10');
+--...........................................................Partie4 Exercice3
+SELECT *
+FROM `frameworks`
+ORDER BY `name`;
