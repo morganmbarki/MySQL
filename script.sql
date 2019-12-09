@@ -49,7 +49,7 @@ CREATE TABLE `clients`
 );
 --...........................................................Partie3 Exercice1
 USE `webDevelopment`;
-ALTER TABLE `clients`
+ALTER TABLE `languages`
 ADD versions VARCHAR(15);
 --...........................................................Partie3 Exercice2
 USE `webDevelopment`;
@@ -62,7 +62,7 @@ CHANGE languages version VARCHAR(255);
 --...........................................................Partie3 Exercice4
 USE `webDevelopment`;
 ALTER TABLE `languages`
-MODIFY version VARCHAR(10);
+MODIFY version VARCHAR(15);
 --...........................................................Partie3 Exercice5
 USE `webDevelopment`;
 ALTER TABLE `clients`
@@ -79,3 +79,10 @@ VALUES ('JavaScript', 'version 5'),
 ('JavaScript', 'version 7'),
 ('JavaScript', 'version 8'),
 ('PHP', 'version 7');
+--...........................................................Partie4 Exercice2
+USE `webDevelopment`;
+INSERT INTO `frameworks` (`name`,`versions`)
+VALUES ('Symfony', 'version 2.8'),
+('Symfony', 'version 3'),
+('Jquery', 'version 1.6'),
+('Jquery', 'version 2.10');
