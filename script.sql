@@ -49,25 +49,21 @@ CREATE TABLE `clients`
 );
 --...........................................................Partie3 Exercice1
 USE `webDevelopment`;
-ALTER TABLE `languages`
-ADD versions VARCHAR(15);
+ALTER TABLE `languages` ADD `versions` VARCHAR(15);
 --...........................................................Partie3 Exercice2
 USE `webDevelopment`;
-ALTER TABLE `frameworks`
-ADD version INT;
+ALTER TABLE `frameworks` ADD `version` INT;
 --...........................................................Partie3 Exercice3
 USE `webDevelopment`;
-ALTER TABLE `languages`
-CHANGE languages version VARCHAR(255);
+  -- ALTER TABLE `languages` CHANGE `ancien_nom` `nouveau_nom` type;
+ALTER TABLE `languages` CHANGE `versions` `version` VARCHAR(15);
 --...........................................................Partie3 Exercice4
 USE `webDevelopment`;
-ALTER TABLE `languages`
-MODIFY version VARCHAR(15);
+ALTER TABLE `frameworks` MODIFY `version` VARCHAR(15);
 --...........................................................Partie3 Exercice5
 USE `webDevelopment`;
-ALTER TABLE `clients`
-CHANGE phone phoneNumber INT,
-MODIFY phoneNumber VARCHAR(10);
+-- On peut modifier le type en même temps que le nom avec le mot clé CHANGE
+ALTER TABLE `clients` CHANGE `phone` `phoneNumber` VARCHAR(10);
 --...........................................................Partie4 Exercice1
 USE `webDevelopment`;
 INSERT INTO `languages` (`language`,`version`)
@@ -88,5 +84,5 @@ VALUES ('Symfony', 'version 2.8'),
 ('Jquery', 'version 2.10');
 --...........................................................Partie5 Exercice1
 SELECT *
-FROM `frameworks`
-ORDER BY `name`;
+FROM `languages`
+ORDER BY `language`;
