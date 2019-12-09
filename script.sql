@@ -15,22 +15,22 @@ DROP DATABASE IF EXISTS `frameworks`;
 USE `webDevelopment`;
 CREATE TABLE `languages`
 (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  languages VARCHAR(255)
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `languages` VARCHAR(255)
 );
 --...........................................................Partie2 Exercice2
 USE `webDevelopment`;
 CREATE TABLE `tools`
 (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  tool VARCHAR(255)
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `tool` VARCHAR(255)
 );
 --...........................................................Partie2 Exercice3
 USE `webDevelopment`;
 CREATE TABLE IF NOT EXISTS `frameworks`
 (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100)
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(100)
 );
 --...........................................................Partie2 Exercice4
 USE `webDevelopment`;
@@ -39,13 +39,13 @@ DROP TABLE IF EXISTS `tools`;
 USE `webDevelopment`;
 CREATE TABLE `clients`
 (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  lastname VARCHAR(50),
-  firstname VARCHAR(50),
-  birthdate DATE,
-  address VARCHAR(100),
-  phone INT,
-  mail VARCHAR(150)
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `lastname` VARCHAR(50),
+  `firstname` VARCHAR(50),
+  `birthdate` DATE,
+  `address` VARCHAR(100),
+  `phone` INT,
+  `mail` VARCHAR(150)
 );
 --...........................................................Partie3 Exercice1
 USE `webDevelopment`;
@@ -70,3 +70,12 @@ CHANGE phone phoneNumber INT,
 MODIFY phoneNumber VARCHAR(10);
 --...........................................................Partie4 Exercice1
 USE `webDevelopment`;
+INSERT INTO `languages` (`language`,`version`)
+VALUES ('JavaScript', 'version 5'),
+('PHP', 'version 5.2'),
+('PHP', 'version 5.4'),
+('HTML', 'version 5.1'),
+('JavaScript', 'version 6'),
+('JavaScript', 'version 7'),
+('JavaScript', 'version 8'),
+('PHP', 'version 7');
